@@ -3,7 +3,7 @@
 
 	<head lang="en">
 		<meta charset="UTF-8">
-		<title>优客书城首页</title>
+		<title>个性化产品服务</title>
 		<link rel="stylesheet" type="text/css"  href="dist/css/bootstrap.min.css" th:href="@{/dist/css/bootstrap.min.css}">
 		<link rel="stylesheet" type="text/css" href="css/index.css" th:href="@{/css/index.css}" />
 		<link rel="stylesheet" type="text/css" href="css/animate.css" th:href="@{/css/animate.css}" />
@@ -53,7 +53,7 @@
 			<div th:replace="common/footer :: footer"></div>
 		</div>
 		<!--首页底部信息end->
-		<!--图书内容部分end-->
+		 <!--图书内容部分end-->
 
 		<!-- 登录模态框（Modal） -->
 		<!-- 注册modal end/.modal -->
@@ -91,7 +91,7 @@
 				}
                 $("#" + node).load(contextPath + "/book/getBookData",buildQuery(page,category));
             }
-            
+
             //包装查询参数
 			function buildQuery(page,category) {
 				var query = {};
